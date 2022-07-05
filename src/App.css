@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-image: url('../clima.gif');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.App{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.card{
+    text-align: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 300px;
+    height: 310px;
+    background-color: #d1d0d3;
+   
+    margin: 15px;
+}
+
+.card div{
+    display: flex;
+    align-items: center;
+    gap: 1;
+}
+
+.card h1{
+    color: #772efd;    
+}
+
+.card h4{
+    color: #772efd;
+    margin-top: 15px;
+}
+
+.card span{
+    font-weight: bold;
+    color: black;
+}
+
+.card img{
+    width: 100px;
+    object-fit: cover;
+}
+
+.card button{
+    border: none;
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: #772efd;
+    cursor: pointer;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.card button:hover{
+    color: #772efd;
+    background-color: #fff;
+    border: 1px solid #772efd;
+}
