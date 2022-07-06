@@ -70,3 +70,52 @@ body{
     background-color: #fff;
     border: 1px solid #772efd;
 }
+
+.fondo {
+    background-image: linear-gradient(135deg, #0087d4, #5054b8, #2f3f80, #161569,
+            #5aa984, #a950a1, #ff7cae);
+    background-size: 500%;
+    animation: banimado 10s infinite;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spinner 5s infinite;
+}
+
+@keyframes banimado {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes spinner{
+    0%{
+        box-shadow: 1px 1px 1px 1px rgb(2, 46, 2);
+    }
+    50%{
+        box-shadow: 1px 1px 1px 10px rgb(16, 112, 16);
+    }
+    100%{
+        box-shadow: 1px 1px 1px 1px rgb(7, 182, 7);
+    }
+}
